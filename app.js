@@ -1,4 +1,4 @@
-console.log("Welcome to Beats");
+console.log("Welcome to Beats!");
 
 // Initialize the Variables
 let songIndex = 0;
@@ -24,6 +24,16 @@ let songs = [
         songName: "My Name - Swervy Jeminn", 
         filePath: "assets/3.mp3", 
         coverPath: "assets/3-cover.jpg"
+    },
+    {
+        songName: "Dhadkan - Mani Chopra", 
+        filePath: "assets/4.mp3", 
+        coverPath: "assets/4-cover.jpg"
+    },
+    {
+        songName: "Sajde - Arijit Singh", 
+        filePath: "assets/5.mp3", 
+        coverPath: "assets/5-cover.jpg"
     },
 ]
 
@@ -82,12 +92,12 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     })
 })
 
-document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=9){
+document.getElementById('previous').addEventListener('click', ()=>{
+    if(songIndex<=0){
         songIndex = 0;
     }
     else {
-        songIndex += 1;
+        songIndex -= 1;
     }
     audioElement.src = `assets/${songIndex+1}.mp3`;
     masterSongName.innerHTML = songs[songIndex].songName;
@@ -97,12 +107,12 @@ document.getElementById('next').addEventListener('click', ()=>{
     masterPlay.classList.add('fa-pause-circle');
 })
 
-document.getElementById('previous').addEventListener('click', ()=>{
-    if(songIndex<=0){
+document.getElementById('next').addEventListener('click', ()=>{
+    if(songIndex>=9){
         songIndex = 0;
     }
     else {
-        songIndex -= 1;
+        songIndex += 1;
     }
     audioElement.src = `assets/${songIndex+1}.mp3`;
     masterSongName.innerHTML = songs[songIndex].songName;
