@@ -26,14 +26,19 @@ let songs = [
         coverPath: "assets/3-cover.jpg"
     },
     {
-        songName: "Dhadkan - Mani Chopra", 
+        songName: "Koi Umeed - Pratibha Singh...", 
         filePath: "assets/4.mp3", 
         coverPath: "assets/4-cover.jpg"
     },
     {
-        songName: "Sajde - Arijit Singh", 
+        songName: "Dhadkan - Mani Chopra", 
         filePath: "assets/5.mp3", 
         coverPath: "assets/5-cover.jpg"
+    },
+    {
+        songName: "Sajde - Arijit Singh", 
+        filePath: "assets/6.mp3", 
+        coverPath: "assets/6-cover.jpg"
     },
 ]
 
