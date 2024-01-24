@@ -28,11 +28,6 @@ nav ul li {
     padding: 0 12px;
 } 
 
-.brand img {
-    width: 55px;
-    padding: 0 8px;
-}
-
 .brand {
     display: flex;
     align-items: center;
@@ -40,9 +35,9 @@ nav ul li {
     font-size: 1.3rem;
 }
 
-.links:hover {
-    cursor: pointer;
-    color: #3498db;
+.brand img {
+    width: 55px;
+    padding: 0 8px;
 }
 
 .fa-user, .fa-magnifying-glass, .fa-bars {
@@ -70,7 +65,7 @@ nav i:hover {
 
 /* container styling */
 .container {
-    min-height: 55.5vh;
+    min-height: 55.5vh;     
     background-color: #000;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
@@ -123,29 +118,12 @@ nav i:hover {
     flex-direction: column;
 }
 
-.icons {
-    margin-top: 14px;
-}
-
-.icons i:hover {
-    cursor: pointer;
-}
-
 #myProgressBar {
     width: 80vw;
 }
 
 #myProgressBar:hover {
     cursor: pointer;
-}
-
-#masterPlay {
-    margin-right: 0.25rem;
-    margin-left: 0.25rem;
-}
-
-#masterPlay:hover {
-    color: #3498db;
 }
 
 .songInfo {
@@ -159,6 +137,19 @@ nav i:hover {
     opacity: 0;
     transition: opacity 0.4s ease-in;
     margin-right: 0.5rem;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
+
+#masterPlay {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 /* media queries */
@@ -183,9 +174,6 @@ nav i:hover {
         margin-right: 6.5rem;
     }
 
-    .container {
-        min-height: 60vh;
-    }
     .songItem img, .timestamp {
         margin: 0 11.5px;
     }
@@ -195,7 +183,6 @@ nav i:hover {
     h1 {
         font-size: 1.75rem;
     }
-
     .time {
         display: none;
     }
