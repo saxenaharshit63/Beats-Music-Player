@@ -19,7 +19,7 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 65px;
+    height: 70px;
     background-color: #000;
     color: #fff;
 }
@@ -46,7 +46,7 @@ nav ul li {
     background-color: #fff;
     padding: 0.5rem;
     border-radius: 50%;
-    margin-top: -3rem;
+    margin-top: -3.2rem;
     margin-right: 2.5rem;
 }
 
@@ -65,7 +65,6 @@ nav i:hover {
 
 /* container styling */
 .container {
-    min-height: 55.5vh;     
     background-color: #000;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
@@ -173,10 +172,7 @@ nav i:hover {
     .fa-magnifying-glass {
         margin-right: 6.5rem;
     }
-
-    .container {
-        min-height: 60vh;
-    }
+    
     .songItem img, .timestamp {
         margin: 0 11.5px;
     }
