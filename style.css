@@ -111,7 +111,7 @@ nav i:hover {
     cursor: pointer;
 }
 
-#btn {
+.btn {
     padding: 0.25rem;
     border-radius: 2rem;
     border: none;
