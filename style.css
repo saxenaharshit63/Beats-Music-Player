@@ -69,7 +69,7 @@ nav i:hover {
 
 /* container styling */
 .container {
-    min-height: 92vh;
+    min-height: 90vh;
     background-color: #000;
     color: #fff;
     font-family: 'Varela Round', sans-serif;
